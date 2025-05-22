@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Skillset – Diane Tetede</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-HCwC+E4zhQnTQ0RzF+u8qfq3Xw8D4GShlxLq+dcikKc6X7m5FzvciM8Z9s3z1jF0RRCUc+R/U42E7Gl8O5tLAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  
+  <style>
+    .skill-category {
+      margin-bottom: 40px;
+    }
+    .skill-category h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #3e4095;
+    }
+    .skill-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 0;
+    }
+    .skill-icons img {
+      width: 50px;
+      height: 50px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      will-change: opacity, transform;
+    }
+    .skill-icons img.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .icon-circle img.custom-icon {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body class="is-preload">
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+    
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html" class="logo">Portfolio – Diane Tetede</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+      <ul class="links">
+        <li><a href="index.html">Mes projets</a></li>
+        <li class="active"><a href="generic.html">Skillset</a></li>
+        <li><a href="elements.html">My Journey</a></li>
+      </ul>
+      <ul class="icons">
+        <li><a href="https://x.com/DianeTeted100" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="mailto:tetedediane06@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        <li><a href="https://www.linkedin.com/in/diane-tetede" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        <li><a href="https://github.com/tridie33" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+      <section class="post">
+      <header class="major">
+        <h1 class="section-title">Technologies<br />Utilisées🛠️</h1> <br>
+        <p class="section-subtitle">Voici les outils, langages et technologies que j'ai déjà utilisés pour le développement de mes solutions.</p>
+      </header>
+
+      <section id="skills" style="padding: 60px 20px; background-color: #ffffff;">
+        <div style="max-width: 1100px; margin: auto; display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+
+    <!-- Bloc Data Science -->
+    <div class="skill-box">
+      <div class="icon-circle green">
+        <img src="images/brain-process.png" alt="Data Icon" class="custom-icon">
+      </div>
+      <h3 class="title">Data Science</h3>
+      <p class="desc">Extraire des informations utiles des données pour comprendre, prédire et agir.</p>
+      <p><span class="highlight">Langages/bibliothèques</span><br><span class="tech">Python, Pandas, NumPy, Scikit-learn, TensorFlow</span></p>
+      <p><span class="highlight">Tâches maîtrisées</span><br><span class="tech">Préparation des données, classification, régression, clustering</span></p>
+    </div>
+
+    <!-- Bloc Développement -->
+    <div class="skill-box">
+      <div class="icon-circle violet">
+        <img src="images/codage.png" alt="Development Icon" class="custom-icon">
+      </div>
+      <h3 class="title">Développement</h3>
+      <p class="desc">Conception de solutions techniques et d’automatisations efficaces.</p>
+      <p><span class="highlight">Langages</span><br><span class="tech">Python, SQL, JavaScript, R</span></p>
+      <p><span class="highlight">Outils</span><br><span class="tech">Git, MySQL, Linux, VS Code, UiPath</span></p>
+    </div>
+
+    <!-- Bloc Visualisation -->
+    <div class="skill-box">
+      <div class="icon-circle blue">
+        <img src="images/analyse-exploratoire.png" alt="BI Icon" class="custom-icon">
+      </div>
+      <h3 class="title">Visualisation & BI</h3>
+      <p class="desc">Créer des dashboards visuels et impactants pour la prise de décision.</p>
+      <p><span class="highlight">Outils</span><br><span class="tech">Power BI, Excel, Tableau</span></p>
+      <p><span class="highlight">Compétences</span><br><span class="tech">KPI, storytelling visuel, rapports dynamiques</span></p>
+    </div>
+
+  </div>
+
+  <!-- STYLE INTERNE -->
+  <style>
+    .skill-box {
+      background: #eaeaea;
+      border-radius: 16px;
+      padding: 30px;
+      width: 320px;
+      text-align: center;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+      transition: all 0.4s ease;
+      border-top: 4px solid transparent;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+      border-top: 4px solid #8b5cf6;
+      background-color: #ffffff;
+    }
+
+    .icon-circle {
+      width: 70px;
+      height: 70px;
+      background: #eee;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+    }
+
+    .custom-icon {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+      filter: brightness(0.3);
+    }
+
+    .icon-circle.green { background-color: #d1fae5; }
+    .icon-circle.violet { background-color: #ede9fe; }
+    .icon-circle.blue { background-color: #dbeafe; }
+
+    .title {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #00bbff;
+    }
+
+    .desc {
+      font-size: 14px;
+      font-style: italic;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      color: #000000;
+      font-weight: bold;
+    }
+
+    .tech {
+      color: #1f2937;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .skill-box {
+        width: 100%;
+      }
+    }
+
+.section-title {
+  font-size: 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #000000;
+}
+.section-title:hover {
+  color: #00bbff;
+  transform: scale(1.05);
+  text-shadow: 0 2px 10px rgba(59, 130, 246, 0.4);
+}
+
+.section-subtitle {
+  font-size: 18px;
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skill-box {
+  opacity: 0;
+  transform: scale(0.85) translateY(40px);
+  transition: all 0.6s ease-out;
+  background: #efeeeee6;
+  border-radius: 16px;
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid transparent;
+  pointer-events: none; /* temporaire avant visible */
+}
+
+.skill-box.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  pointer-events: auto;
+}
+
+/* Animation au survol (hover) */
+.skill-box:hover {
+  transform: scale(1.03) translateY(-5px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0);
+  border-top: 4px solid #6366f1;
+}
+
+
+  </style>
+</section>
+
+	<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="POST" action="https://formspree.io/f/xvganwry">
+								<div class="fields">
+									<div class="field">
+									<label for="name">Nom</label>
+									<input type="text" name="name" id="name" placeholder="Votre nom" required />
+									</div>
+									<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" placeholder="votre@email.com" required />
+									</div>
+									<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4" placeholder="Votre message..." required></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><button type="submit" class="button primary">✉️ Envoyer le message</button></li>
+								</ul>
+							</form>
+						</section>
+						
+						<section class="split contact">
+							<section class="alt">
+								<h3>Adresse</h3>
+								<p>France<br />
+							</section>
+							<section>
+								<h3>Telephone</h3>
+								<p><a href="tel:+33616864915">(33) 06 16 86 49 15</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:tetedediane06@gmail.com">tetedediane06@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://x.com/DianeTeted100" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="mailto:tetedediane06@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.linkedin.com/in/diane-tetede" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/tridie33" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+			</div>
+
+      <script>
+        const skillBoxes = document.querySelectorAll('.skill-box');
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        }, { threshold: 0.3 });
+
+        skillBoxes.forEach(box => {
+          observer.observe(box);
+        });
+    
+				const form = document.querySelector("form");
+				form.addEventListener("submit", async function (e) {
+					e.preventDefault();
+					const data = new FormData(form);
+					const action = form.getAttribute("action");
+
+					const response = await fetch(action, {
+					method: "POST",
+					body: data,
+					headers: {
+						'Accept': 'application/json'
+					}
+					});
+
+					if (response.ok) {
+					alert("Merci ! Votre message a été envoyé. 😊");
+					form.reset();
+					} else {
+					alert("Oups... Une erreur est survenue. Réessayez.");
+					}
+				});
+			</script>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
